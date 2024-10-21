@@ -1,0 +1,9 @@
+.Menu {
+    @media screen and (min-width: 719px) {
+        display: flex;
+
+        h2 {
+            padding: 0 1rem;
+        }
+    }
+}

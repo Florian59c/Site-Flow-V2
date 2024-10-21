@@ -1,9 +1,10 @@
 import './css/Home.scss';
+import Header from 'components/Header';
 
 function Home() {
     return (
         <div className="Home">
-            <p>portfolio</p>
+            <Header />
         </div>
     );
 }
