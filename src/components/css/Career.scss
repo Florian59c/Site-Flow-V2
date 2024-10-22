@@ -1,0 +1,28 @@
+.Career {
+    h1 {
+        text-align: center;
+    }
+
+    .one-career {
+        background-color: #1A1A1A;
+        border-radius: 10px;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 719px) {
+        .career-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+
+            .one-career {
+                width: 50%;
+                margin-top: 0;
+                flex: 0 0 45%;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.Profile {
+    img {
+        max-width: 100%;
+        border-radius: 100%;
+    }
+
+    h1,
+    h2,
+    p {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 719px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            max-width: 33%;
+        }
+
+        div {
+            max-width: 67%;
+        }
+    }
+}
