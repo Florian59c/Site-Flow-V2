@@ -1,0 +1,17 @@
+.Skills {
+    h1 {
+        text-align: center;
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
