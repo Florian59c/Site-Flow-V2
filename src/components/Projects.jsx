@@ -1,18 +1,18 @@
 import './css/Projects.scss';
-import CareerList from 'data/CareerList';
+import ProjectsList from 'data/ProjectsList';
 
 function Projects() {
     return (
         <div className="Projects">
             <h1>Mes projets</h1>
-            <div>
-                {CareerList.map((career, index) => {
+            <div className='projects-list'>
+                {ProjectsList.map((project, index) => {
                     return (
-                        <div key={index} className='one-career'>
-                            <h1>{career.date}</h1>
-                            <h2>{career.post}</h2>
-                            <p>{career.place}</p>
-                            <p>{career.description}</p>
+                        <div key={index} className='one-project'>
+                            <div>
+                                <h2>{project.name}</h2>
+                            </div>
+                            <img src={project.imageLink} alt={project.name} />
                         </div>
                     );
                 })}
