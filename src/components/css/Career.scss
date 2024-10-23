@@ -15,13 +15,11 @@
         .career-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 2%;
             justify-content: center;
 
             .one-career {
-                width: 50%;
-                margin-top: 0;
-                flex: 0 0 45%;
+                flex: 0 0 49%;
             }
         }
     }

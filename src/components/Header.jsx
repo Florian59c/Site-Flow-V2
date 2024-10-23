@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import MenuIcon from 'assets/img/icons/Menu.png';
+import MenuIcon from 'assets/img/icon/Menu.png';
 import './css/Header.scss';
 import Menu from './Menu';
 
