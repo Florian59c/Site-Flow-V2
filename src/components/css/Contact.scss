@@ -1,0 +1,29 @@
+.Contact {
+    h1 {
+        text-align: center;
+    }
+
+    div {
+        text-align: center;
+        margin-top: 2rem;
+
+        img {
+            width: 100px;
+            background-color: #1A1A1A;
+            padding: 1rem;
+            border-radius: 100%;
+        }
+    }
+
+    @media screen and (min-width: 719px) {
+        .my-contact {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: 33%;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

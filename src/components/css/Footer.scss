@@ -1,0 +1,32 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .images {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            width: 45%;
+        }
+
+        img {
+            width: 25px;
+            border-radius: 100%;
+        }
+    }
+
+    @media screen and (min-width: 719px) {
+        .images {
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
