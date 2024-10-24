@@ -9,9 +9,9 @@ function Career() {
                 {CareerList.map((career, index) => {
                     return (
                         <div key={index} className='one-career'>
-                            <h1>{career.date}</h1>
+                            <h3>{career.date}</h3>
                             <h2>{career.post}</h2>
-                            <p>{career.place}</p>
+                            <p className='place'>{career.place}</p>
                             <p>{career.description}</p>
                         </div>
                     );

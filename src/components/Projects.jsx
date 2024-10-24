@@ -10,7 +10,7 @@ function Projects() {
                     return (
                         <div key={index} className='one-project'>
                             <div>
-                                <h2>{project.name}</h2>
+                                <h3>{project.name}</h3>
                             </div>
                             <img src={project.imageLink} alt={project.name} />
                         </div>

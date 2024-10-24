@@ -1,17 +1,28 @@
 .Contact {
-    h1 {
-        text-align: center;
-    }
+    margin-top: 2rem;
 
-    div {
-        text-align: center;
+    .link {
+        display: flex;
+        justify-content: center;
         margin-top: 2rem;
 
-        img {
-            width: 100px;
+        div {
+            width: 150px;
+            height: 150px;
             background-color: #1A1A1A;
-            padding: 1rem;
             border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 75px;
+            }
+        }
+
+        p {
+            text-align: center;
+            margin-top: 5px;
         }
     }
 

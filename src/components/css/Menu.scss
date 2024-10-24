@@ -1,8 +1,12 @@
 .Menu {
+    h4 {
+        font-weight: normal;
+    }
+
     @media screen and (min-width: 719px) {
         display: flex;
 
-        h2 {
+        h4 {
             padding-left: 1rem;
         }
     }

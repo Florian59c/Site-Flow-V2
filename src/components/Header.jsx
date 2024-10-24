@@ -24,7 +24,7 @@ function Header() {
                     <div className='mobile-screen'>
                         <div onClick={() => setAppearMenu(!appearMenu)}>
                             <img src={MenuIcon} alt="icon du menu" />
-                            <h2>Menu</h2>
+                            <h4>Menu</h4>
                         </div>
                     </div>
                     :

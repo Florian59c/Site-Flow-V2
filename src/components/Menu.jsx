@@ -3,11 +3,11 @@ import './css/Menu.scss';
 function Menu() {
     return (
         <div className='Menu'>
-            <h2>Profil</h2>
-            <h2>Parcour</h2>
-            <h2>Compétences</h2>
-            <h2>Projets</h2>
-            <h2>Contact</h2>
+            <h4>Profil</h4>
+            <h4>Parcour</h4>
+            <h4>Compétences</h4>
+            <h4>Projets</h4>
+            <h4>Contact</h4>
         </div>
     );
 }

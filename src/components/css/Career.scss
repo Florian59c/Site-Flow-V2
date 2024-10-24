@@ -1,14 +1,31 @@
 .Career {
-    h1 {
-        text-align: center;
+    margin-top: 2rem;
+
+    h3 {
+        color: #FFBD39;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        color: #808080;
     }
 
     .one-career {
         background-color: #1A1A1A;
         border-radius: 10px;
-        padding: 0 1rem;
+        padding: 1rem 1rem;
         margin-top: 1rem;
         width: 100%;
+
+        .place {
+            padding-top: 0.5rem;
+            padding-bottom: 1.25rem;
+        }
     }
 
     @media screen and (min-width: 719px) {

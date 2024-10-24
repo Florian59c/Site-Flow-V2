@@ -1,26 +1,34 @@
 import './css/Contact.scss';
-import Menu from 'assets/img/icon/Menu.png'
+import Mail from 'assets/img/icon/Mail.png';
+import Phone from 'assets/img/icon/Phone.png';
+import LinkedIn from 'assets/img/icon/LinkedIn.png';
 
 function Contact() {
     return (
         <div className="Contact">
             <h1>Me contacter</h1>
             <div className='my-contact'>
-                <div>
+                <div className='link'>
                     <a href="mailto:florian.cagnon@live.fr">
-                        <img src={Menu} alt="Mail" />
+                        <div>
+                            <img src={Mail} alt="Mail" />
+                        </div>
                         <p>florian.cagnon@live.fr</p>
                     </a>
                 </div>
-                <div>
+                <div className='link'>
                     <a href="tel:+33695857136">
-                        <img src={Menu} alt="Téléphone" />
+                        <div>
+                            <img src={Phone} alt="Téléphone" />
+                        </div>
                         <p>06.95.85.71.36</p>
                     </a>
                 </div>
-                <div>
+                <div className='link'>
                     <a href="https://www.linkedin.com/in/florian-cagnon-dev-web-fullstack/" target="_blank" rel="noreferrer noopener">
-                        <img src={Menu} alt="LinkedIn" />
+                        <div>
+                            <img src={LinkedIn} alt="LinkedIn" />
+                        </div>
                         <p>LinkedIn</p>
                     </a>
                 </div>
