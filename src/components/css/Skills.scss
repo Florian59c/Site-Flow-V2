@@ -1,7 +1,9 @@
 .Skills {
+    scroll-margin-top: 60px;
     margin-top: 2rem;
 
     .skills-list {
+        margin-top: 1rem;
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
@@ -10,6 +12,15 @@
         img {
             width: 75px;
             height: 75px;
+        }
+    }
+
+    @media screen and (min-width: 719px) {
+        scroll-margin-top: 80px;
+        margin-top: 4rem;
+
+        .skills-list {
+            margin-top: 2rem;
         }
     }
 }

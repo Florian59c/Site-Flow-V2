@@ -3,7 +3,7 @@ import CareerList from 'data/CareerList';
 
 function Career() {
     return (
-        <div className="Career">
+        <div className="Career" id="career" >
             <h1>Mon parcours dans le web</h1>
             <div className='career-list'>
                 {CareerList.map((career, index) => {

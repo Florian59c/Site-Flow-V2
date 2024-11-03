@@ -5,7 +5,7 @@ import LinkedIn from 'assets/img/icon/LinkedIn.png';
 
 function Contact() {
     return (
-        <div className="Contact">
+        <div className="Contact" id="contact" >
             <h1>Me contacter</h1>
             <div className='my-contact'>
                 <div className='link'>

@@ -1,4 +1,8 @@
 .Header {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    background-color: #000000;
 
     h1,
     h4 {
@@ -9,12 +13,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem;
+        padding-top: 1rem;
 
         h1 {
             text-align: left;
             text-transform: uppercase;
             font-size: 1.75rem;
+            color: #FFBD39;
         }
 
         .mobile-screen {

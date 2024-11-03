@@ -1,4 +1,5 @@
 .Contact {
+    scroll-margin-top: 60px;
     margin-top: 2rem;
 
     .link {
@@ -27,13 +28,21 @@
     }
 
     @media screen and (min-width: 719px) {
+        scroll-margin-top: 80px;
+        margin-top: 4rem;
+
         .my-contact {
+            margin-top: 2rem;
             display: flex;
             justify-content: space-around;
 
-            div {
+            .link {
                 width: 33%;
                 margin-top: 1rem;
+
+                p {
+                    margin-top: 1rem;
+                }
             }
         }
     }

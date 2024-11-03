@@ -3,7 +3,7 @@ import Photo from 'assets/img/Photo.png';
 
 function Profile() {
     return (
-        <div className="Profile">
+        <div className="Profile" id="profile" >
             <img src={Photo} alt="Florian Cagnon" />
             <div>
                 <h2>Bonjour et bienvenue sur mon portfolio !</h2>
