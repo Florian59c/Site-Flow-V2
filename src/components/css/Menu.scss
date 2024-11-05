@@ -1,8 +1,25 @@
 .Menu {
+    h4 {
+        font-weight: normal;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-color: #FFBD39;
+        }
+
+    }
+
+    .active {
+        color: #FFBD39;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
     @media screen and (min-width: 719px) {
         display: flex;
 
-        h2 {
+        h4 {
             padding-left: 1rem;
         }
     }

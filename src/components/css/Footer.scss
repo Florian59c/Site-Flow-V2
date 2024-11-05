@@ -1,7 +1,15 @@
 .Footer {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    div {
+        p {
+            color: #FFBD39;
+        }
+    }
 
     .copyright {
         padding: 0 1rem;
@@ -13,7 +21,7 @@
         justify-content: space-between;
 
         a {
-            width: 45%;
+            width: 48%;
         }
 
         img {
@@ -23,6 +31,8 @@
     }
 
     @media screen and (min-width: 719px) {
+        margin-top: 10rem;
+
         .images {
             img {
                 width: 50px;

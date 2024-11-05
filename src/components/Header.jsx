@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import MenuIcon from 'assets/img/icon/Menu.png';
 import './css/Header.scss';
 import Menu from './Menu';
+import { Link } from "react-scroll";
 
 function Header() {
     const [isMobile, setIsMobile] = useState(false);
@@ -19,12 +20,19 @@ function Header() {
     return (
         <div className="Header">
             <div className='bar'>
-                <h1 onClick={() => window.location.reload()}>Mon portfolio</h1>
+                <Link
+                    to="start"
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}
+                >
+                    <h1>Mon portfolio</h1>
+                </Link>
                 {isMobile ?
                     <div className='mobile-screen'>
                         <div onClick={() => setAppearMenu(!appearMenu)}>
                             <img src={MenuIcon} alt="icon du menu" />
-                            <h2>Menu</h2>
+                            <h4>Menu</h4>
                         </div>
                     </div>
                     :

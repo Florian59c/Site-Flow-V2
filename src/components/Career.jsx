@@ -3,15 +3,15 @@ import CareerList from 'data/CareerList';
 
 function Career() {
     return (
-        <div className="Career">
+        <div className="Career" id="career" >
             <h1>Mon parcours dans le web</h1>
             <div className='career-list'>
                 {CareerList.map((career, index) => {
                     return (
                         <div key={index} className='one-career'>
-                            <h1>{career.date}</h1>
+                            <h3>{career.date}</h3>
                             <h2>{career.post}</h2>
-                            <p>{career.place}</p>
+                            <p className='place'>{career.place}</p>
                             <p>{career.description}</p>
                         </div>
                     );
