@@ -1,5 +1,4 @@
 .Profile {
-    scroll-margin-top: 60px;
     padding-top: 2rem;
 
     img {
@@ -25,7 +24,6 @@
     }
 
     @media screen and (min-width: 719px) {
-        scroll-margin-top: 80px;
         padding-top: 4rem;
         display: flex;
         justify-content: space-between;

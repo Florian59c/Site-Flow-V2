@@ -1,14 +1,59 @@
 import './css/Menu.scss';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from "react-scroll";
 
 function Menu() {
     return (
         <div className='Menu'>
-            <Link to="#profile"><h4>Profil</h4></Link>
-            <Link to="#career"><h4>Parcour</h4></Link>
-            <Link to="#skills"><h4>Compétences</h4></Link>
-            <Link to="#projects"><h4>Projets</h4></Link>
-            <Link to="#contact"><h4>Contact</h4></Link>
+            <Link
+                activeClass="active"
+                to="profile"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
+            >
+                <h4>Profil</h4>
+            </Link>
+            <Link
+                activeClass="active"
+                to="career"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+            >
+                <h4>Parcour</h4>
+            </Link>
+            <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+            >
+                <h4>Compétences</h4>
+            </Link>
+            <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+            >
+                <h4>Projets</h4>
+            </Link>
+            <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1000}
+            >
+                <h4>Contact</h4>
+            </Link>
         </div>
     );
 }

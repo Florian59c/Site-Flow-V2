@@ -9,7 +9,7 @@ import Footer from 'components/Footer';
 
 function Home() {
     return (
-        <div className="Home">
+        <div className="Home" id='start'>
             <Header />
             <Profile />
             <Career />

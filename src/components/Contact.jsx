@@ -7,6 +7,11 @@ function Contact() {
     return (
         <div className="Contact" id="contact" >
             <h1>Me contacter</h1>
+            <div className='contact-message'>
+                <p>Vous souhaitez me contacter ?</p>
+                <p>Je serais ravi d'échanger avec vous par mail, téléphone ou sur LinkedIn selon vos préférences.</p>
+                <p>Je suis joignable tous les jours entre 10h et 18h.</p>
+            </div>
             <div className='my-contact'>
                 <div className='link'>
                     <a href="mailto:florian.cagnon@live.fr">
