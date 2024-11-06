@@ -11,6 +11,7 @@ function Projects() {
                         <div key={index} className='one-project'>
                             <div>
                                 <h3>{project.name}</h3>
+                                <p>{project.technoList}</p>
                             </div>
                             <img src={project.imageLink} alt={project.name} />
                         </div>
