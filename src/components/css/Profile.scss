@@ -1,22 +1,24 @@
 .Profile {
     padding-top: 2rem;
 
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 50%;
-        border-radius: 100%;
+    .hello {
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+            border-radius: 100%;
+        }
+
+        div {
+            text-align: center;
+        }
     }
 
-    h2,
     p {
-        text-align: center;
-        margin-top: 0.5rem;
-    }
-
-    p {
+        margin-top: 2rem;
         color: #808080;
+        text-align: center;
     }
 
     .myself {
@@ -24,18 +26,21 @@
     }
 
     @media screen and (min-width: 719px) {
-        padding-top: 4rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+        .hello {
+            padding-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
 
-        img {
-            max-width: 33%;
-        }
+            img {
+                width: 33%;
+            }
 
-        div {
-            max-width: 67%;
+            div {
+                width: 67%;
+                text-align: center;
+            }
         }
     }
 }
