@@ -9,7 +9,7 @@ function Profile() {
                 <img src={Photo} alt="Florian Cagnon" />
                 <div>
                     <TypeAnimation
-                        style={{ whiteSpace: 'pre-line', fontSize: '1.8rem', fontWeight: 'bold', textShadow: '0.5px 0.5px 2px #FFF' }}
+                        style={{ whiteSpace: 'pre-line', fontSize: '1.8rem', fontWeight: 'bold', textShadow: '2px 2px 3px #808080' }}
                         sequence={[
                             `Bonjour et bienvenue sur mon portfolio !
                         
