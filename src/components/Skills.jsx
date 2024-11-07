@@ -1,5 +1,6 @@
 import './css/Skills.scss';
 import SkillsList from 'data/SkillsList';
+import { Tooltip } from '@material-ui/core';
 
 function Skills() {
     return (
@@ -8,7 +9,9 @@ function Skills() {
             <div className='skills-list'>
                 {SkillsList.map((skill, index) => {
                     return (
-                        <img src={skill.link} alt={skill.name} key={index} />
+                        <Tooltip title={skill.name} aria-label={skill.name} arrow>
+                            <img src={skill.link} alt={skill.name} key={index} />
+                        </Tooltip>
                     );
                 })}
             </div>
