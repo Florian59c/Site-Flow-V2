@@ -10,6 +10,28 @@ function ProjectsDetail({ selectedProject, setOpenModal }) {
                 </div>
                 <div className='content'>
                     <h1>{selectedProject.name}</h1>
+                    <div className='intro'>
+                        <div>
+                            <img src={selectedProject.imageLink} alt={`Screenshot du projet : ${selectedProject.name}`} />
+                            <p>{selectedProject.technoList}</p>
+                        </div>
+                        <p>{selectedProject.presentation}</p>
+                    </div>
+                    <div className='details'>
+                        <h2>Plus de détails</h2>
+                        <p>{selectedProject.details}</p>
+                    </div>
+                    <div className='demo'>
+                        <h3>Vidéos de Démonstration :</h3>
+                        {selectedProject.video.map((video, index) => {
+                            return (
+                                <div key={index} >
+                                    <video src={video.url}></video>
+                                    <p>{video.name}</p>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
