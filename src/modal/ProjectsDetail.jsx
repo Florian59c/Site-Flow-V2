@@ -15,23 +15,29 @@ function ProjectsDetail({ selectedProject, setOpenModal }) {
                             <img src={selectedProject.imageLink} alt={`Screenshot du projet : ${selectedProject.name}`} />
                             <p>{selectedProject.technoList}</p>
                         </div>
-                        <p>{selectedProject.presentation}</p>
+                        <p className='present'>{selectedProject.presentation}</p>
                     </div>
-                    <div className='details'>
-                        <h2>Plus de détails</h2>
-                        <p>{selectedProject.details}</p>
-                    </div>
-                    <div className='demo'>
-                        <h3>Vidéos de Démonstration :</h3>
-                        {selectedProject.video.map((video, index) => {
-                            return (
-                                <div key={index} >
-                                    <video src={video.url}></video>
-                                    <p>{video.name}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
+                    {selectedProject.details &&
+                        <div className='details'>
+                            <h2>Plus de détails</h2>
+                            <p>{selectedProject.details}</p>
+                        </div>
+                    }
+                    {selectedProject.video.length !== 0 &&
+                        <div className='demo'>
+                            <h3>Vidéos de Démonstration :</h3>
+                            <div className='video-container'>
+                                {selectedProject.video.map((video, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <video src={video.url} type="video/mp4" controls></video>
+                                            <p>{video.name}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
