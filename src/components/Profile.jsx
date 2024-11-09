@@ -22,7 +22,7 @@ function Profile() {
                     />
                 </div>
             </div>
-            <p>Présentation ici !!!!</p>
+            <p>Passionné depuis l'enfance par les nouvelles technologies et le développement d'application, j'ai choisie de me spécialiser dans le développement d'applications web et mobile. De ce fait, je mets à disposition ma passion ainsi que mes compétences et mon expérience au service d'entreprises qui souhaitent s'investir dans le numérique.</p>
         </div>
     );
 }

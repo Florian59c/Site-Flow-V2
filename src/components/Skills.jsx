@@ -9,8 +9,8 @@ function Skills() {
             <div className='skills-list'>
                 {SkillsList.map((skill, index) => {
                     return (
-                        <Tooltip title={skill.name} aria-label={skill.name} arrow>
-                            <img src={skill.link} alt={skill.name} key={index} />
+                        <Tooltip title={skill.name} aria-label={skill.name} arrow key={index} >
+                            <img src={skill.link} alt={skill.name} />
                         </Tooltip>
                     );
                 })}

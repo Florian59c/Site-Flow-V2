@@ -38,10 +38,7 @@ const ProjectsList = [
                 url: FlowBlog_Admin
             }
         ],
-        linkWebSite: "",
-        linkGitHub: "",
-        linkFigma: "",
-        linkDocumentation: ""
+        lniks: []
     },
     {
         name: "WeTeKnow",
@@ -50,10 +47,16 @@ const ProjectsList = [
         presentation: "WeTeKnow est un projet sur lequel je suis intervenu lors de mon stage à l'incubateur numérique. Il s'agit d'une application web permettant à des formateurs de créer des quiz et à des stagiaires de les réaliser.\nEn plus de cela, l'application comporte une authentification avec gestion de rôle et modification de profil, la possibilité pour des formateurs d'envoyer des invitations ou de bannir des stagiaires, l'affichage de statistiques via des scores ou le nombre de quiz réalisé et une gestion de groupes d'études.\nLes styles sont intégralement gérés avec le framework CSS « Tailwind ». Qui plus est, la première version de l'application étant destiné au desktop, aucune version responsive n'a été créé.\nLe site a été pensé de sorte qu'il y ai le mien de scroll possible et que toute informations tiennent sur les différentes pages. Ainsi, une grande quantité d'actions sont gérées via des fenêtres « modales ».",
         details: "J'ai intégré le projet après son commencement, dans une équipe de quatre développeurs et une designeuse. Ainsi, j'ai réussi à m'adapter rapidement à un projet conséquent, à la manière de développer de mes collègues, mais également aux technos que je ne connaissais pas tel que « Tailwind ».",
         video: [],
-        linkWebSite: "",
-        linkGitHub: "",
-        linkFigma: "https://www.figma.com/file/Cs6j4IPavy9sSyQMNc4tRk/WeTeKnow?type=design&node-id=1-3&mode=design&t=rXqzPuThR9AjrLwi-0",
-        linkDocumentation: "https://www.behance.net/gallery/187747797/WETEKNOW-QUIZFIGMA-MAQUETTAGE-PROTOTYPAGE-ANIMATIONS"
+        links: [
+            {
+                name: "Figma",
+                url: "https://www.figma.com/file/Cs6j4IPavy9sSyQMNc4tRk/WeTeKnow?type=design&node-id=1-3&mode=design&t=rXqzPuThR9AjrLwi-0"
+            },
+            {
+                name: "Documentaion",
+                url: "https://www.behance.net/gallery/187747797/WETEKNOW-QUIZFIGMA-MAQUETTAGE-PROTOTYPAGE-ANIMATIONS"
+            }
+        ]
     },
     {
         name: "Copilote",
@@ -71,10 +74,24 @@ const ProjectsList = [
                 url: Copilote_natif
             }
         ],
-        linkWebSite: "https://neumann4.wns.wilders.dev/",
-        linkGitHub: "https://github.com/WildCodeSchool/2211-wns-neumann-copilot",
-        linkFigma: "https://www.figma.com/file/B1SUjTR4HY6Xqaibefp53z/copilot?type=design&node-id=0-1&mode=design",
-        linkDocumentation: "https://docs.google.com/document/d/1FisUr0ik_HSxBbNzFaAHs7i7ZCF0SnG4Jj5ci9H59TI/edit?usp=sharing"
+        links: [
+            {
+                name: "Copilote",
+                url: "https://neumann4.wns.wilders.dev/"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/WildCodeSchool/2211-wns-neumann-copilot"
+            },
+            {
+                name: "Figma",
+                url: "https://www.figma.com/file/B1SUjTR4HY6Xqaibefp53z/copilot?type=design&node-id=0-1&mode=design"
+            },
+            {
+                name: "Documentaion",
+                url: "https://docs.google.com/document/d/1FisUr0ik_HSxBbNzFaAHs7i7ZCF0SnG4Jj5ci9H59TI/edit?usp=sharing"
+            }
+        ]
     },
     {
         name: "Point'n'Click",
@@ -83,10 +100,16 @@ const ProjectsList = [
         presentation: "Il s'agit d'un jeu d'enquête en point'n'click dans lequel il faut fouiller dans l'ordinateur d'une personne disparue. Le jeu autorise la connexion et l'inscription d'utilisateur et permet d'enregistrer le temps que le joueur met pour terminer le jeu sous forme de « meilleur score ». De plus, un ranking est disponible à la fin du jeu et affiche le score et le pseudo des 10 meilleurs. La connexion n'est pas obligatoire pour jouer et terminer les enquêtes (seulement, le score ne sera pas enregistré dans ce cas).\n Diverses énigmes sont disponible et suivent un fil conducteur pour avancer dans le scénario. Ces énigmes sont essentiellement basées sur le visuel, la réflexion, la mémoire, et surtout, le clic !",
         details: "Le projet est toujours en cours. Le back est terminé et fonctionne parfaitement. Côté front, il est possible de s'authentifier. Tous les visuels externes au jeu (les menus...) sont terminés ainsi que la première énigme. Les autres sont encore en cours de création et l'application n'est donc pas hébergée pour le moment.",
         video: [],
-        linkWebSite: "",
-        linkGitHub: "https://github.com/Florian59c/Point-n-click",
-        linkFigma: "https://www.figma.com/file/8Bz4C1wgaHi1KJYSMwijTG/Point-n-click-Maquettes?type=design&mode=design&t=2OFJ7AjCD5BBD37t-0",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Point-n-click"
+            },
+            {
+                name: "Figma",
+                url: "https://www.figma.com/file/8Bz4C1wgaHi1KJYSMwijTG/Point-n-click-Maquettes?type=design&mode=design&t=2OFJ7AjCD5BBD37t-0"
+            }
+        ]
     },
     {
         name: "Roll Dice",
@@ -100,10 +123,16 @@ const ProjectsList = [
                 url: Roll_Dice
             }
         ],
-        linkWebSite: "https://roll-dice-flow.web.app/",
-        linkGitHub: "https://github.com/Florian59c/roll-dice",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "Roll Dice",
+                url: "https://roll-dice-flow.web.app/"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/roll-dice"
+            }
+        ]
     },
     {
         name: "Ancien portfolio",
@@ -112,10 +141,16 @@ const ProjectsList = [
         presentation: "Ce site est mon premier portfolio, que j'ai réalisé avec React en 2022. Il possède trois pages en tout : la page d’accueil, la page listant mes projets ainsi que la page donnant des détails sur chaque projet.\nLa page d’accueil possède une brève description de l'application ainsi qu'un bouton de redirection permettant d'accéder à la liste des projets.\nLa page listant mes projets est générée dynamiquement grâce à un « .map » effectué dans un tableau d’enregistrement. Ce tableau liste toutes les informations de mes projets.\nPour la page des détails sur un projet, elle est générée dynamiquement via une comparaison avec l’URL répertorié dans l’enregistrement et celui passé dans les « props ». Donc, via un « .find », je récupère les informations demandées dans un tableau pour les afficher à l’écran.",
         details: "Sur la page donnant les détails d’un projet, plusieurs conditions sont effectuées pour vérifier si le contenu est vide, afin d’adapter la page et de la rendre agréable à consulter dans tous les cas de figure possible.\nUn ternaire est également appliqué à toute la page pour gérer un changement d’URL de l’utilisateur et d'afficher un message d’erreur et une redirection.\nIl existe également une page « Not Found » qui apparaît lorsqu’une page n’est pas trouvée.\nPour finir, le « Header » et le « Footeur » sont des composants réutilisés sur une grande partie du site.",
         video: [],
-        linkWebSite: "https://le-site-de-flow.web.app/",
-        linkGitHub: "https://github.com/Florian59c/Site-Flow",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "Le site de flow",
+                url: "https://le-site-de-flow.web.app/"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Site-Flow"
+            }
+        ]
     },
     {
         name: "Disney +",
@@ -133,10 +168,12 @@ const ProjectsList = [
                 url: Disney_mobile
             }
         ],
-        linkWebSite: "",
-        linkGitHub: "https://github.com/Florian59c/Disney",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Disney"
+            }
+        ]
     },
     {
         name: "Search Cars",
@@ -145,10 +182,12 @@ const ProjectsList = [
         presentation: "Search Car est un projet en React Native. Il s’agit d’une application permettant de louer des véhicules.\nLa page d’accueil possède simplement un bouton indiquant le nombre de véhicules à découvrir.\nAppuyer dessus, permet d’accéder à la liste des véhicules. Les informations sont affichées de manière dynamique en faisant appel à un tableau d’enregistrement. Ce sont également des boutons permettant de consulter les détails du véhicule choisi.\nSur la page de détails, le véhicule est trouvé via les « props » et ses informations sont récupéré depuis le tableau dans un « state » afin de les afficher dynamiquement.",
         details: "Search Car est le premier projet que j’ai fait en React Native et est, de ce fait, très basique. Je n'ai donc pas prévu de l'ajouté au Play Store en l’état.",
         video: [],
-        linkWebSite: "",
-        linkGitHub: "https://github.com/Florian59c/Search_Cars",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Search_Cars"
+            }
+        ]
     },
     {
         name: "Clean3000",
@@ -157,10 +196,12 @@ const ProjectsList = [
         presentation: "Clean 3000 est un projet conçu en condition réel. Le but était d’informatiser un formulaire papier pour un client fictif représentant une société de lavage de vitres. Les demandes client étaient de pouvoir renseigner des informations (sur l’entreprise, le technicien et la date d’intervention, suivie de possibles commentaires), puis de les afficher automatiquement à l’écran pour en faire un « screenshot ». Les technologies et la mise en forme (le maquettage) étaient totalement libres (bien que nous étions limitées à des langages Front-end). Nous devions rendre le projet le soir même (8 heures de travail) afin de le présenter au client (toujours fictif) le lendemain.\nJ’ai fait le choix de React et d’envoyer les informations sur une page à part.",
         details: "J’ai commencé par maquetter le projet sur « Figma ». Puis j’ai entamé le développement en « Mobile first », en m’inspirant de mes maquette.\nLa page principale contient un « Header », qui est le logo de la société cliente, et est un composant réutilisé pour la deuxième page. Elle contient, aussi, quatre formulaires que le technicien doit remplir. Un clic sur le bouton « enregistrer » envoi sur la seconde page avec les informations remplient précédemment.\nCette page ne contient que les informations récupérées via les « props ».",
         video: [],
-        linkWebSite: "",
-        linkGitHub: "https://github.com/Florian59c/clean3000",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/clean3000"
+            }
+        ]
     },
     {
         name: "Hôtel Deluxe",
@@ -174,10 +215,16 @@ const ProjectsList = [
                 url: Hotel
             }
         ],
-        linkWebSite: "https://hotel-deluxe-fcdw.web.app/",
-        linkGitHub: "https://github.com/Florian59c/Hotel-deluxe",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "Hôtel Deluxe",
+                url: "https://hotel-deluxe-fcdw.web.app/"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Hotel-deluxe"
+            }
+        ]
     },
     {
         name: "Marvel Univers",
@@ -191,10 +238,16 @@ const ProjectsList = [
                 url: Marvel
             }
         ],
-        linkWebSite: "https://marvel-univers-fcdw.web.app/",
-        linkGitHub: "https://github.com/Florian59c/MarvelUnivers",
-        linkFigma: "",
-        linkDocumentation: ""
+        links: [
+            {
+                name: "Marvel Univers",
+                url: "https://marvel-univers-fcdw.web.app/"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/MarvelUnivers"
+            }
+        ]
     }
 ];
 
