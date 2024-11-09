@@ -10,6 +10,7 @@ function Projects() {
     return (
         <div className="Projects" id="projects" >
             <h1>Mes projets</h1>
+            <p className='intro'>Tous mes projets sont triés du plus récent au plus ancien.</p>
             <div className='projects-list'>
                 {ProjectsList.map((project, index) => {
                     return (
