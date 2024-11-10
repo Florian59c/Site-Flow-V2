@@ -22,7 +22,7 @@ function Menu() {
                 offset={-70}
                 duration={1000}
             >
-                <h4>Parcour</h4>
+                <h4>Parcours</h4>
             </Link>
             <Link
                 activeClass="active"
