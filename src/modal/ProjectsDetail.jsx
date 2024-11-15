@@ -3,7 +3,7 @@ import X from "assets/img/icon/X.png";
 
 function ProjectsDetail({ selectedProject, setOpenModal }) {
     return (
-        <div className="ProjectsDetail" >
+        <div className="ProjectsDetail" data-aos="zoom-in" data-aos-duration="200">
             <div className='container'>
                 <div className='x' onClick={() => setOpenModal(false)}>
                     <img src={X} alt="Fermer la fenêtre" />
