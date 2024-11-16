@@ -1,0 +1,115 @@
+.NotFound {
+    margin-top: 6rem;
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        text-shadow: 2px 2px 3px #808080;
+    }
+
+    h2 {
+        text-shadow: 1px 1px 3px #808080;
+    }
+
+    .button {
+        margin-top: 2rem;
+        position: relative;
+        display: flex;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:hover {
+                text-shadow: 0 0 20px #FFF;
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 350px) {
+        .button {
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 500px) {
+        .button {
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 719px) {
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .button {
+            margin: 5rem 5rem 0 5rem;
+
+            h3 {
+                font-size: 2rem;
+
+                &:hover {
+                    text-shadow: 0 0 40px #FFF;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 850px) {
+        .button {
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .button {
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .button {
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+    }
+
+    @media screen and (min-width: 1350px) {
+        .button {
+            margin-left: 25rem;
+            margin-right: 25rem;
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+        .button {
+            margin-left: 30rem;
+            margin-right: 30rem;
+        }
+    }
+}
