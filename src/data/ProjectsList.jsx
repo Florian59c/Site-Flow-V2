@@ -38,7 +38,7 @@ const ProjectsList = [
                 url: FlowBlog_Admin
             }
         ],
-        lniks: []
+        links: []
     },
     {
         name: "WeTeKnow",
@@ -53,7 +53,7 @@ const ProjectsList = [
                 url: "https://www.figma.com/file/Cs6j4IPavy9sSyQMNc4tRk/WeTeKnow?type=design&node-id=1-3&mode=design&t=rXqzPuThR9AjrLwi-0"
             },
             {
-                name: "Documentaion",
+                name: "Documentation",
                 url: "https://www.behance.net/gallery/187747797/WETEKNOW-QUIZFIGMA-MAQUETTAGE-PROTOTYPAGE-ANIMATIONS"
             }
         ]
@@ -75,10 +75,10 @@ const ProjectsList = [
             }
         ],
         links: [
-            {
-                name: "Copilote",
-                url: "https://neumann4.wns.wilders.dev/"
-            },
+            // {
+            //     name: "Copilote",
+            //     url: "https://neumann4.wns.wilders.dev/"
+            // },
             {
                 name: "GitHub",
                 url: "https://github.com/WildCodeSchool/2211-wns-neumann-copilot"
@@ -88,7 +88,7 @@ const ProjectsList = [
                 url: "https://www.figma.com/file/B1SUjTR4HY6Xqaibefp53z/copilot?type=design&node-id=0-1&mode=design"
             },
             {
-                name: "Documentaion",
+                name: "Documentation",
                 url: "https://docs.google.com/document/d/1FisUr0ik_HSxBbNzFaAHs7i7ZCF0SnG4Jj5ci9H59TI/edit?usp=sharing"
             }
         ]
