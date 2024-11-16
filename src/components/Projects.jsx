@@ -9,8 +9,8 @@ function Projects() {
 
     return (
         <div className="Projects" id="projects" >
-            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Mes projets</h1>
-            <p className='intro' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Tous mes projets sont triés du plus récent au plus ancien.</p>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mes projets</h1>
+            <p className='intro' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Tous mes projets sont triés du plus récent au plus ancien.</p>
             <div className='projects-list'>
                 {ProjectsList.map((project, index) => {
                     return (
@@ -19,7 +19,7 @@ function Projects() {
                             className='one-project'
                             data-aos="zoom-in-up"
                             data-aos-duration="1000"
-                            data-aos-delay="500"
+                            data-aos-delay="200"
                             onClick={() => { setSelectedProject(project); setOpenModal(true); }}
                         >
                             <div>
