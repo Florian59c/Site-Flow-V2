@@ -5,11 +5,19 @@ import { Tooltip } from '@material-ui/core';
 function Skills() {
     return (
         <div className="Skills" id="skills" >
-            <h1>Mes compétences</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mes compétences</h1>
             <div className='skills-list'>
                 {SkillsList.map((skill, index) => {
                     return (
-                        <Tooltip title={skill.name} aria-label={skill.name} arrow key={index} >
+                        <Tooltip
+                            title={skill.name}
+                            aria-label={skill.name}
+                            arrow
+                            key={index}
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                            data-aos-delay="200"
+                        >
                             <img src={skill.link} alt={skill.name} />
                         </Tooltip>
                     );

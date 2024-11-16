@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="Footer">
             <div>
-                <a href="https://drive.google.com/file/d/1uFrpe1KJcNwMXhy2cCbl47yefGmuT5h6/view?usp=sharing" target="_blank" rel="noreferrer noopener"><p>CV</p></a>
+                <a href="https://drive.google.com/file/d/1uFrpe1KJcNwMXhy2cCbl47yefGmuT5h6/view?usp=drive_link" target="_blank" rel="noreferrer noopener"><p>CV</p></a>
                 <a href="https://github.com/Florian59c?tab=repositories" target="_blank" rel="noreferrer noopener"><p>GitHub</p></a>
             </div>
             <p className='copyright'>Copyright ©2024 by Cagnon Florian</p>

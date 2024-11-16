@@ -103,6 +103,41 @@
                     }
                 }
             }
+
+            .links {
+                margin-top: 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .link {
+                    margin-top: 1rem;
+                    position: relative;
+                    display: flex;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        align-items: center;
+                    }
+
+                    h2 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        &:hover {
+                            text-shadow: 0 0 20px #FFF;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -152,9 +187,12 @@
                 .demo {
                     .video-container {
                         display: flex;
+                        flex-wrap: wrap;
+                        gap: 1rem;
+                        justify-content: space-around;
 
                         div {
-                            flex: 1 1 0;
+                            flex: 0 0 45%;
                             padding: 0 1rem;
 
                             video {
@@ -170,6 +208,41 @@
                         }
                     }
                 }
+
+                .links {
+                    margin-top: 5rem;
+                    margin-bottom: 2rem;
+
+                    h2 {
+                        margin-bottom: 1rem;
+                    }
+
+                    .buttons-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1rem;
+                        justify-content: space-around;
+
+                        .link {
+                            flex: 0 0 40%;
+
+                            h2:hover {
+                                font-size: 2.5rem;
+                                text-shadow: 0 0 40px #FFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .link {
+            justify-content: center;
+
+            img {
+                max-width: 75%;
             }
         }
     }

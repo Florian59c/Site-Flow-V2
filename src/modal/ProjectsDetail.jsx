@@ -1,9 +1,10 @@
 import './css/ProjectsDetail.scss';
 import X from "assets/img/icon/X.png";
+import Button from "assets/img/Button.png";
 
 function ProjectsDetail({ selectedProject, setOpenModal }) {
     return (
-        <div className="ProjectsDetail" >
+        <div className="ProjectsDetail" data-aos="zoom-in" data-aos-duration="200">
             <div className='container'>
                 <div className='x' onClick={() => setOpenModal(false)}>
                     <img src={X} alt="Fermer la fenêtre" />
@@ -36,6 +37,20 @@ function ProjectsDetail({ selectedProject, setOpenModal }) {
                                     );
                                 })}
                             </div>
+                        </div>
+                    }
+                    {selectedProject.links.length !== 0 &&
+                        <div className='links'>
+                            <h2>Liens</h2>
+                            <div className='buttons-container'>
+                                {selectedProject.links.map((link, index) => {
+                                    return (
+                                        <a href={link.url} target="_blank" rel="noreferrer noopener" key={index} className='link'>
+                                            <img src={Button} alt='bouton personnalisé' />
+                                            <h2>{link.name}</h2>
+                                        </a>
+                                    );
+                                })}</div>
                         </div>
                     }
                 </div>
