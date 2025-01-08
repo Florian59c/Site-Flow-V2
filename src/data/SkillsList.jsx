@@ -1,11 +1,13 @@
 import HTML from "assets/img/logo/html-5.png";
 import CSS from "assets/img/logo/css-3.png";
-import SCSS from "assets/img/logo/scss.png";
+import SASS from "assets/img/logo/sass.png";
 import Tailwind from "assets/img/logo/Tailwind.png";
 import JS from "assets/img/logo/js.png";
 import TS from "assets/img/logo/ts.jpg";
 import React from "assets/img/logo/react.png";
+import Next from "assets/img/logo/nextjs.png";
 import NodeJS from "assets/img/logo/NodeJS.png";
+import Nest from "assets/img/logo/nestjs.png";
 import GraphQL from "assets/img/logo/graphql.png";
 import PostgreSQL from "assets/img/logo/postgre-sql.png";
 import PHP from "assets/img/logo/php.png";
@@ -26,8 +28,8 @@ const SkillsList = [
         link: CSS
     },
     {
-        name: "SCSS",
-        link: SCSS
+        name: "SASS",
+        link: SASS
     },
     {
         name: "Tailwind",
@@ -46,8 +48,16 @@ const SkillsList = [
         link: React
     },
     {
+        name: "Next.js",
+        link: Next
+    },
+    {
         name: "Node.js",
         link: NodeJS
+    },
+    {
+        name: "Nest.js",
+        link: Nest
     },
     {
         name: "GraphQL",
