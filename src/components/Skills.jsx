@@ -1,6 +1,6 @@
 import './css/Skills.scss';
 import SkillsList from 'data/SkillsList';
-import { Tooltip } from '@material-ui/core';
+import { Tooltip } from '@mui/material';
 
 function Skills() {
     return (
