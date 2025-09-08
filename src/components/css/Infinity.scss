@@ -1,0 +1,13 @@
+.infinity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 500px; // la taille du svg
+    }
+
+    .infinity-dot {
+        fill: #FFBD39; // la couleur de cercle
+    }
+}
