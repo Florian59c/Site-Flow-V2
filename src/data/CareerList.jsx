@@ -1,5 +1,11 @@
 const CareerList = [
     {
+        date: "Depuis janvier 2024",
+        post: "Développeur web",
+        place: "Freelance",
+        description: "Conception, design et développement d’applications diverses en collaboration avec les besoins client."
+    },
+    {
         date: "Novembre 2023 - Décembre 2023",
         post: "Développeur React / Node.js",
         place: "Incubateur numérique d'Euratechnologie",
