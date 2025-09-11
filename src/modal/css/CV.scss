@@ -1,0 +1,193 @@
+.CVContainer {
+    position: fixed;
+    z-index: 5;
+    inset: 0;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.closing {
+        opacity: 0;
+        transform: scale(0.8); // même effet mais en inverse
+    }
+
+    .container {
+        border: 3px solid #808080;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 100%;
+
+        padding: 0.2rem;
+        background-color: #1A1A1A;
+        box-shadow: 0 0 10px #5F5F5F;
+
+        .x {
+            display: flex;
+            justify-content: end;
+            flex-shrink: 0;
+            margin-bottom: 0.5rem;
+
+            img {
+                width: 30px;
+                border: 3px solid #808080;
+                border-radius: 100%;
+                padding: 5px;
+                background-color: #1A1A1A;
+                cursor: pointer;
+
+                &:hover {
+                    padding: 4px;
+                    border-width: 2px;
+                }
+            }
+        }
+
+        .content {
+            padding: 0.5rem;
+            flex: 1;
+            overflow-y: auto;
+
+            // masque scrollbar sur tous navigateurs
+            -ms-overflow-style: none; // IE / Edge
+            scrollbar-width: none; // Firefox
+
+            &::-webkit-scrollbar {
+                display: none; // Chrome / Safari
+            }
+
+            .pdf-preview {
+                flex: 1;
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    border-radius: 8px;
+                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    .download-arrow {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: 0;
+                        flex-shrink: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: white;
+                        line-height: 1;
+                    }
+                }
+            }
+
+            .first-pdf {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 500px) {
+        .container {
+            .x {
+                margin-bottom: 1rem;
+            }
+
+            .content {
+                padding: 2rem;
+
+                .first-pdf {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 719px) {
+        .container {
+            width: 90%;
+
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 2rem;
+                padding: 1rem;
+
+                .pdf-preview {
+                    flex: 1;
+                    max-width: 45%;
+                    text-align: center;
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+                    }
+                }
+
+                .first-pdf {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .container {
+            width: 80%;
+            max-height: 100%;
+
+            .content {
+                .pdf-preview {
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .container {
+            width: auto;
+
+            .content {
+                .pdf-preview {
+                    flex: 1;
+                    text-align: center;
+
+                    img {
+                        height: 60vh;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1350px) {
+        .container {
+            .content {
+                padding: 1rem 2rem;
+
+                .pdf-preview {
+                    img {
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+    }
+}

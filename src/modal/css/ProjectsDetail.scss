@@ -1,17 +1,9 @@
 .ProjectsDetail {
     position: fixed;
     z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     padding: 0.5rem;
     background-color: rgb(0, 0, 0, 0.8);
-
-    // permet de retirer le visuel de la scrollbar
-    ::-webkit-scrollbar {
-        width: 0px;
-    }
 
     .container {
         border: 3px solid #808080;
@@ -51,6 +43,14 @@
             bottom: 0;
             margin: 0.8rem;
             margin-top: 3rem;
+
+            // masque scrollbar sur tous navigateurs
+            -ms-overflow-style: none; // IE / Edge
+            scrollbar-width: none; // Firefox
+
+            &::-webkit-scrollbar {
+                display: none; // Chrome / Safari
+            }
 
             .intro {
                 margin-top: 1rem;
