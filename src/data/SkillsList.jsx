@@ -1,5 +1,3 @@
-import HTML from "assets/img/logo/html-5.png";
-import CSS from "assets/img/logo/css-3.png";
 import SASS from "assets/img/logo/sass.png";
 import Tailwind from "assets/img/logo/Tailwind.png";
 import JS from "assets/img/logo/js.png";
@@ -17,83 +15,122 @@ import Docker from "assets/img/logo/docker.png";
 import Jest from "assets/img/logo/jest.png";
 import Figma from "assets/img/logo/figma.png";
 import Jira from "assets/img/logo/jira.png";
+import MUI from "assets/img/logo/material-ui.png";
+import TypeORM from "assets/img/logo/typeorm.png";
+import Bootstrap from "assets/img/logo/bootstrap.png";
+import AOS from "assets/img/logo/aos.png";
+import Symfony from "assets/img/logo/symfony.png";
 
 const SkillsList = [
     {
-        name: "HTML 5",
-        link: HTML
-    },
-    {
-        name: "CSS 3",
-        link: CSS
-    },
-    {
-        name: "SASS",
-        link: SASS
-    },
-    {
-        name: "Tailwind",
-        link: Tailwind
-    },
-    {
-        name: "JavaScript",
-        link: JS
-    },
-    {
-        name: "TypeScript",
-        link: TS
-    },
-    {
         name: "React",
-        link: React
+        link: React,
+        isMainSkill: true
     },
     {
         name: "Next.js",
-        link: Next
+        link: Next,
+        isMainSkill: true
+    },
+    {
+        name: "JavaScript",
+        link: JS,
+        isMainSkill: true
+    },
+    {
+        name: "TypeScript",
+        link: TS,
+        isMainSkill: true
+    },
+    {
+        name: "SASS",
+        link: SASS,
+        isMainSkill: true
+    },
+    {
+        name: "Material UI",
+        link: MUI,
+        isMainSkill: true
     },
     {
         name: "Node.js",
-        link: NodeJS
+        link: NodeJS,
+        isMainSkill: true
     },
     {
         name: "Nest.js",
-        link: Nest
+        link: Nest,
+        isMainSkill: true
     },
     {
-        name: "GraphQL",
-        link: GraphQL
+        name: "TypeORM",
+        link: TypeORM,
+        isMainSkill: true
     },
     {
         name: "Postgre SQL",
-        link: PostgreSQL
-    },
-    {
-        name: "PHP",
-        link: PHP
+        link: PostgreSQL,
+        isMainSkill: true
     },
     {
         name: "GitHub",
-        link: GitHub
-    },
-    {
-        name: "GitLab",
-        link: GitLab
+        link: GitHub,
+        isMainSkill: true
     },
     {
         name: "Docker",
-        link: Docker
+        link: Docker,
+        isMainSkill: true
     },
     {
         name: "Jest",
-        link: Jest
+        link: Jest,
+        isMainSkill: true
     },
     {
         name: "Figma",
-        link: Figma
+        link: Figma,
+        isMainSkill: true
     },
     {
         name: "Jira",
-        link: Jira
+        link: Jira,
+        isMainSkill: true
+    },
+    {
+        name: "Tailwind",
+        link: Tailwind,
+        isMainSkill: false
+    },
+    {
+        name: "Bootstrap",
+        link: Bootstrap,
+        isMainSkill: false
+    },
+    {
+        name: "AOS",
+        link: AOS,
+        isMainSkill: false
+    },
+    {
+        name: "GraphQL",
+        link: GraphQL,
+        isMainSkill: false
+    },
+    {
+        name: "PHP",
+        link: PHP,
+        isMainSkill: false
+    },
+    {
+        name: "Symfony",
+        link: Symfony,
+        isMainSkill: false
+    },
+    {
+        name: "GitLab",
+        link: GitLab,
+        isMainSkill: false
     }
 ];
 
