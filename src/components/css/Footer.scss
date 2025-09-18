@@ -5,10 +5,8 @@
     justify-content: space-between;
     align-items: center;
 
-    div {
-        p {
-            color: #FFBD39;
-        }
+    .github {
+        color: #FFBD39;
     }
 
     .copyright {
@@ -19,14 +17,19 @@
     .images {
         display: flex;
         justify-content: space-between;
+        gap: 0.3rem;
 
         a {
             width: 48%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         img {
             width: 25px;
             border-radius: 100%;
+            display: block;
         }
     }
 
@@ -34,8 +37,18 @@
         margin-top: 10rem;
 
         .images {
+            gap: 0.5rem;
+
             img {
-                width: 50px;
+                width: 30px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+        .images {
+            img {
+                width: 35px;
             }
         }
     }
