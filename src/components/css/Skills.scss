@@ -1,14 +1,6 @@
 .Skills {
     margin-top: 2rem;
 
-    .sub-category {
-        margin: 1rem 0;
-
-        p {
-            text-align: center;
-            font-size: 1.2rem;
-        }
-    }
 
     .other-skills-select {
         display: flex;
@@ -21,16 +13,6 @@
             &:hover {
                 text-decoration: underline;
                 text-underline-offset: 4px;
-            }
-        }
-
-        .arrow {
-            width: 1.2rem;
-            height: 1.2rem;
-            transition: transform 0.3s ease; // animation fluide
-
-            &.open {
-                transform: rotate(90deg);
             }
         }
     }
@@ -51,14 +33,6 @@
 
     @media screen and (min-width: 719px) {
         margin-top: 4rem;
-
-        .sub-category {
-            margin-bottom: 2rem;
-
-            p {
-                font-size: 1.5rem;
-            }
-        }
 
         .skills-list {
             gap: 2rem;

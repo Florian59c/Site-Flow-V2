@@ -1,37 +1,27 @@
 import './css/Projects.scss';
+import ProjectsLists from './ProjectsLists';
 import ProjectsList from 'data/ProjectsList';
-import ProjectsDetail from 'modal/ProjectsDetail';
+import Arrow from "assets/img/icon/right-arrow.png";
 import { useState } from 'react';
 
 function Projects() {
-    const [openModal, setOpenModal] = useState(false);
-    const [selectedProject, setSelectedProject] = useState({});
-
+    const [display, setDisplay] = useState(false);
     return (
         <div className="Projects" id="projects" >
             <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mes projets</h1>
-            <p className='intro' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Tous mes projets sont triés du plus récent au plus ancien.</p>
-            <div className='projects-list'>
-                {ProjectsList.map((project, index) => {
-                    return (
-                        <div
-                            key={index}
-                            className='one-project'
-                            data-aos="zoom-in-up"
-                            data-aos-duration="1000"
-                            data-aos-delay="200"
-                            onClick={() => { setSelectedProject(project); setOpenModal(true); }}
-                        >
-                            <div>
-                                <h3>{project.name}</h3>
-                                <p>{project.technoList}</p>
-                            </div>
-                            <img src={project.imageLink} alt={project.name} />
-                        </div>
-                    );
-                })}
+            <div className='sub-category'>
+                <p>Projets Principaux</p>
             </div>
-            {openModal && <ProjectsDetail selectedProject={selectedProject} setOpenModal={setOpenModal} />}
+            <ProjectsLists projects={ProjectsList.slice(0, 2)} />
+            <div className='sub-category' onClick={() => setDisplay(!display)}>
+                <p>Anciens Projets</p>
+                <img
+                    src={Arrow}
+                    alt="flèche"
+                    className={`arrow ${display ? 'rotate' : ''}`}
+                />
+            </div>
+            {display && <ProjectsLists projects={ProjectsList.slice(2)} />}
         </div>
     );
 }
