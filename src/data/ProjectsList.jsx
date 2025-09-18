@@ -10,6 +10,9 @@ import IMG_point_n_click from "assets/img/screenshot/Point'n'Click.png";
 import IMG_copilote from "assets/img/screenshot/Copilote.png";
 import IMG_weteknow from "assets/img/screenshot/WeTeKnow.png";
 import IMG_flowblog from "assets/img/screenshot/FlowBlog.png";
+import IMG_site_de_Flow_V2 from "assets/img/screenshot/Site de Flow V2.png";
+import IMG_idearium from "assets/img/screenshot/Idearium.png";
+import IMG_interogation from "assets/img/screenshot/point d'interrogation.png";
 // Les vidéos :
 import FlowBlog_User from 'assets/video/FlowBlog_User.mp4';
 import FlowBlog_Admin from 'assets/video/FlowBlog_Admin.mp4';
@@ -23,10 +26,56 @@ import Marvel from 'assets/video/Marvel.mp4';
 
 const ProjectsList = [
     {
+        name: "???",
+        imageLink: IMG_interogation,
+        technoList: "JAVA / SpringBoot",
+        presentation: "Un site « Amazon like » avec JAVA/SpringBoot. En préparation...",
+        details: "",
+        video: [],
+        links: []
+    },
+    {
+        name: "Idearium",
+        imageLink: IMG_idearium,
+        technoList: "Next.js / NestJS / TypeScript / TypeORM / MUI / Docker / GitHub / Figma / Jira",
+        presentation: "Idearium est ma première mission freelance !\nElle a été réalisée en adéquation avec les besoins du client : proposer aux utilisateurs un site de contenu basé sur le jeu de rôle.\nLe client avait besoin d'un site sous le format d'un blog, avec plusieurs catégories de posts sur lesquels publier son contenu et pouvant afficher les commentaires des utilisateurs. Le site contient un système d'authentification et de gestion de profil, la possibilité de contacter le propriétaire par mail et une section réservée à l'administrateur pour la gestion du contenu et la modération.\nLa plupart des éléments de design sont réalisés avec Materail UI. L'authentification est gérée avec un JWT stocké dans un cookie « HTTP Only » et les restriction administrateurs avec un « hook » pour le front et un « Guard » pour le back. Pour répondre au besoin client, en termes de stockage, les posts sont des documents pdf, stockés sur une Google Drive dont les liens sont stockés en base de données et affichés directement dans la page.",
+        details: "Pour cette mission, j'ai orchestré l'intégralité du projet :\n - J'ai construit le cahier des charges sous le format de ticket Jira en adéquation avec les besoins du client.\n - J'ai créé des maquettes avec Figma pour que le client puisse valider que le design est cohérent avec ce qu'il souhaite.\n - J'ai organisé des réunions régulièrement pour faire la démonstration de l'application afin de tenir informé le client sur l'avancement du développement et m'assurer de sa satisfaction par rapport à l'UX-UI.\n - J'ai développé l'intégralité du site, avec les technos Next.js, NestJS et Material UI, qui m'était inconnu et que j'ai découvert lors de cette mission.\n - J'ai procédé à l'hébergement de l'application sur Vercel pour le front et Railway pour le back.",
+        video: [],
+        links: [
+            {
+                name: "Idearium",
+                url: "https://idearium-jdr.vercel.app/"
+            },
+        ]
+    },
+    {
+        name: "Le site de flow V2",
+        imageLink: IMG_site_de_Flow_V2,
+        technoList: "React / SASS / GitHub / MUI / AOS",
+        presentation: "« Le site de flow V2 » est la deuxième version de mon portfolio, avec une refonte totale de la structure et du design. Le site est conçu pour tenir sur une seule page, avec des fenêtres modales pour afficher les détails du contenu que l'on sélectionne. Néanmoins, il possède tout de même une page 404, avec une animation CSS.\nL'application affiche un menu contenant un système d'ancrage qui permet le scroll automatique jusqu'à la section souhaitée. De plus, des animations sont implémentées pour faire apparaître les sections et sous-sections à leur apparition à l'écran avec un effet de mouvement vers le haut. Ces animations sont gérées grâce à la librairie « Animate on scroll » (AOS). Material UI est également utilisé, pour afficher les noms des technologies, dans une bulle, par-dessus les logos.",
+        details: "J'ai créé cette nouvelle version de mon portfolio, pour qu'elle soit plus proche mes capacités tout en restant simple d'utilisation et agréable à parcourir en termes d'UX-UI.",
+        video: [
+            // {
+            //     name: "Démonstration de mon portfolio",
+            //     url: 
+            // }
+        ],
+        links: [
+            {
+                name: "Lien Vers la page 404",
+                url: "http://localhost:3000/#/404"
+            },
+            {
+                name: "GitHub",
+                url: "https://github.com/Florian59c/Site-Flow-V2"
+            }
+        ]
+    },
+    {
         name: "FlowBlog",
         imageLink: IMG_flowblog,
         technoList: "React / Bootstrap / Symfony / MySQL",
-        presentation: `Flowblog est une application que j'ai réalisée lors d'un test technique au cours de ma recherche d'alternance. Le blog devait être réalisé en 2 semaines en respectant un cahier des charges fournies par l'entreprise et en utilisant les technos utilisées en interne : React, Bootstrap et Symfony.\nL'application possède une gestion d'utilisateur avec des mots de passe hachés et une gestion de rôle avec des envois de mails pour une vérification de compte. Il offre la possibilité pour un utilisateur de prendre contact avec moi par mail et d'écrire des commentaires sur les posts.\nUn administrateur peut accéder à la liste des commentaires soumis et les accepte pour qu'ils apparaissent dans le post en lien ou les supprimer. Il peut aussi ajouter, modifier ou supprimer des posts. Les posts sont affichés par date de création ou de dernière modification en commençant par le plus récent.`,
+        presentation: "Flowblog est une application que j'ai réalisée lors d'un test technique au cours de ma recherche d'alternance. Le blog devait être réalisé en 2 semaines en respectant un cahier des charges fournies par l'entreprise et en utilisant les technos utilisées en interne : React, Bootstrap et Symfony.\nL'application possède une gestion d'utilisateur avec des mots de passe hachés et une gestion de rôle avec des envois de mails pour une vérification de compte. Il offre la possibilité pour un utilisateur de prendre contact avec moi par mail et d'écrire des commentaires sur les posts.\nUn administrateur peut accéder à la liste des commentaires soumis et les accepte pour qu'ils apparaissent dans le post en lien ou les supprimer. Il peut aussi ajouter, modifier ou supprimer des posts. Les posts sont affichés par date de création ou de dernière modification en commençant par le plus récent.",
         details: "Flowblog est le 1er projet que j'ai réalisé avec Symfony tout en n'ayant jamais travaillé avec ce Framework. Durant les 2 semaines de conceptions, j'ai appris à l'utiliser et je suis parvenue à réaliser toutes les fonctionnalités du cahier des charges. De plus, j'ai également appris à utiliser Bootstrap pour styliser l'application.",
         video: [
             {
