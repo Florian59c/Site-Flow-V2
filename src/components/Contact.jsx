@@ -10,7 +10,6 @@ function Contact() {
             <div className='contact-message' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
                 <p>Vous souhaitez me contacter ?</p>
                 <p>Je serais ravi d'échanger avec vous par mail, téléphone ou sur LinkedIn selon vos préférences.</p>
-                <p>Je suis joignable tous les jours entre 10h et 18h.</p>
             </div>
             <div className='my-contact'>
                 <div className='link' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
