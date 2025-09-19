@@ -23,6 +23,7 @@ import Disney from 'assets/video/Disney.mp4';
 import Disney_mobile from 'assets/video/Disney_mobile.mp4';
 import Hotel from 'assets/video/Hotel.mp4';
 import Marvel from 'assets/video/Marvel.mp4';
+import Portfolio_V2 from 'assets/video/Portfolio_V2.mp4';
 
 const ProjectsList = [
     {
@@ -55,10 +56,10 @@ const ProjectsList = [
         presentation: "« Le site de flow V2 » est la deuxième version de mon portfolio, avec une refonte totale de la structure et du design. Le site est conçu pour tenir sur une seule page, avec des fenêtres modales pour afficher les détails du contenu que l'on sélectionne. Néanmoins, il possède tout de même une page 404, avec une animation CSS.\nL'application affiche un menu contenant un système d'ancrage qui permet le scroll automatique jusqu'à la section souhaitée. De plus, des animations sont implémentées pour faire apparaître les sections et sous-sections à leur apparition à l'écran avec un effet de mouvement vers le haut. Ces animations sont gérées grâce à la librairie « Animate on scroll » (AOS). Material UI est également utilisé, pour afficher les noms des technologies, dans une bulle, par-dessus les logos.",
         details: "J'ai créé cette nouvelle version de mon portfolio, pour qu'elle soit plus proche mes capacités tout en restant simple d'utilisation et agréable à parcourir en termes d'UX-UI.",
         video: [
-            // {
-            //     name: "Démonstration de mon portfolio",
-            //     url: 
-            // }
+            {
+                name: "Démonstration de mon portfolio",
+                url: Portfolio_V2
+            }
         ],
         links: [
             {
