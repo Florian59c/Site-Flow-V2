@@ -1,8 +1,13 @@
 import './css/Profile.scss';
 import Photo from 'assets/img/Photo.png';
+import CVIcon from 'assets/img/icon/CV-Icon.png';
+import CV from 'modal/CV';
+import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-function Profile() {
+export default function Profile() {
+    const [openModal, setOpenModal] = useState(false);
+
     return (
         <div className="Profile" id="profile" >
             <div className='hello'>
@@ -28,10 +33,13 @@ function Profile() {
                 </div>
             </div>
             <p data-aos="fade-up" data-aos-duration="2000">
-                Passionné depuis l'enfance par les nouvelles technologies et le développement d'application, j'ai choisie de me spécialiser dans le développement d'applications web et mobile. De ce fait, je mets à disposition ma passion ainsi que mes compétences et mon expérience au service d'entreprises qui souhaitent s'investir dans le numérique.
+                Développeur fullstack spécialisé en React/Next, NestJS et PostgreSQL, j’accompagne mes clients de la conception au déploiement d’applications web performantes et évolutives.
             </p>
+            <div className="cv-block" data-aos="fade-up" data-aos-duration="2000" onClick={() => setOpenModal(true)}>
+                <img src={CVIcon} alt="Icon avec plusieurs CV empilés" />
+                <p>Voir mes CV</p>
+            </div>
+            {openModal && <CV setOpenModal={setOpenModal} />}
         </div>
     );
 }
-
-export default Profile;

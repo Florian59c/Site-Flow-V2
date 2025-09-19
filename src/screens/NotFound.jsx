@@ -1,18 +1,18 @@
 import './css/NotFound.scss';
 import { Link } from 'react-router-dom';
 import Button from "assets/img/Button.png";
+import Infinity from 'components/Infinity';
 
-function NotFound() {
+export default function NotFound() {
     return (
         <div className="NotFound">
             <h1>404</h1>
             <h2>La page que vous cherchez n'existe pas !</h2>
+            <Infinity />
             <Link to="/" className='button'>
-                <img src={Button} alt='bouton personnalisé' />
+                <img src={Button} alt="Bouton ramenant à la page d'accueil" />
                 <h3>Retourner à la page d'accueil</h3>
             </Link>
         </div>
     );
 }
-
-export default NotFound;

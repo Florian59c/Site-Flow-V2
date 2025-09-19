@@ -1,30 +1,22 @@
 import './css/Skills.scss';
 import SkillsList from 'data/SkillsList';
-import { Tooltip } from '@material-ui/core';
+import SkillSection from './SkillSection';
 
-function Skills() {
+export default function Skills() {
+    const mainSkills = SkillsList.filter(skill => skill.isMainSkill);
+    const otherSkills = SkillsList.filter(skill => !skill.isMainSkill);
+
     return (
-        <div className="Skills" id="skills" >
-            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mes compétences</h1>
-            <div className='skills-list'>
-                {SkillsList.map((skill, index) => {
-                    return (
-                        <Tooltip
-                            title={skill.name}
-                            aria-label={skill.name}
-                            arrow
-                            key={index}
-                            data-aos="fade-up"
-                            data-aos-duration="2000"
-                            data-aos-delay="200"
-                        >
-                            <img src={skill.link} alt={skill.name} />
-                        </Tooltip>
-                    );
-                })}
-            </div>
+        <div className="Skills" id="skills">
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Mes compétences
+            </h1>
+            <SkillSection title="Stack principal" skills={mainSkills} />
+            <SkillSection
+                title="Autres technos explorées"
+                skills={otherSkills}
+                toggleable
+            />
         </div>
     );
 }
-
-export default Skills;

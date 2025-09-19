@@ -1,7 +1,7 @@
 import './css/Career.scss';
 import CareerList from 'data/CareerList';
 
-function Career() {
+export default function Career() {
     return (
         <div className="Career" id="career" >
             <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Mon parcours dans le web</h1>
@@ -20,5 +20,3 @@ function Career() {
         </div>
     );
 }
-
-export default Career;
