@@ -27,16 +27,16 @@ export default function CV({ setOpenModal }) {
                 </div>
                 <div className='content'>
                     <div className="pdf-preview first-pdf">
-                        <img src={CV_Classique_preview} alt="Apperçu CV classique" />
+                        <img src={CV_Classique_preview} alt="Apperçu du CV en version classique" />
                         <a href="/cv/CV_(Classique)-Cagnon_Florian.pdf" download="CV_(Classique)-Cagnon_Florian.pdf">
-                            <img src={DownloadArrow} alt="Télécharger" className='download-arrow' />
+                            <img src={DownloadArrow} alt="Télécharger le CV classique" className='download-arrow' />
                             <p>Télécharger le CV "classique"</p>
                         </a>
                     </div>
                     <div className="pdf-preview">
-                        <img src={CV_Original_preview} alt="Apperçu CV original" />
+                        <img src={CV_Original_preview} alt="Apperçu du CV en version original" />
                         <a href="/cv/CV_(Original)-Cagnon_Florian.pdf" download="CV_(Original)-Cagnon_Florian.pdf">
-                            <img src={DownloadArrow} alt="Télécharger" className='download-arrow' />
+                            <img src={DownloadArrow} alt="Télécharger le CV original" className='download-arrow' />
                             <p>Télécharger le CV "original"</p>
                         </a>
                     </div>

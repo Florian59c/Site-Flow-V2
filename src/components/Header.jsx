@@ -16,7 +16,7 @@ export default function Header() {
 
                 {/* bouton burger visible en mobile */}
                 <div className='mobile-screen' onClick={() => setAppearMenu(!appearMenu)}>
-                    <img src={MenuIcon} alt="icon du menu" />
+                    <img src={MenuIcon} alt="Icon de menu affichant ou masquant les menus" />
                     <h4>Menu</h4>
                 </div>
 

@@ -18,7 +18,7 @@ export default function SkillSection({ title, skills, toggleable = false }) {
                 {toggleable && (
                     <img
                         src={Arrow}
-                        alt="flèche"
+                        alt="Flèche"
                         className={`arrow ${open ? "open" : ""}`}
                     />
                 )}

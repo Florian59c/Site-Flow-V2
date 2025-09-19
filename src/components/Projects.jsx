@@ -17,7 +17,7 @@ export default function Projects() {
                 <p>Anciens Projets</p>
                 <img
                     src={Arrow}
-                    alt="flèche"
+                    alt="Flèche"
                     className={`arrow ${display ? 'rotate' : ''}`}
                 />
             </div>

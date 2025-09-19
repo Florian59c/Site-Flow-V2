@@ -36,7 +36,7 @@ export default function Profile() {
                 Développeur fullstack spécialisé en React/Next, NestJS et PostgreSQL, j’accompagne mes clients de la conception au déploiement d’applications web performantes et évolutives.
             </p>
             <div className="cv-block" data-aos="fade-up" data-aos-duration="2000" onClick={() => setOpenModal(true)}>
-                <img src={CVIcon} alt="Icon de CV" />
+                <img src={CVIcon} alt="Icon avec plusieurs CV empilés" />
                 <p>Voir mes CV</p>
             </div>
             {openModal && <CV setOpenModal={setOpenModal} />}

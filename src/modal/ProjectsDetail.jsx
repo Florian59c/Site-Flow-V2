@@ -56,7 +56,7 @@ export default function ProjectsDetail({ selectedProject, setOpenModal }) {
                             <div className='buttons-container'>
                                 {selectedProject.links.map((link, index) => (
                                     <a href={link.url} target="_blank" rel="noreferrer noopener" key={index} className='link'>
-                                        <img src={Button} alt='bouton personnalisé' />
+                                        <img src={Button} alt={`Lien redirigeant vers : ${link.name}`} />
                                         <h2>{link.name}</h2>
                                     </a>
                                 ))}

@@ -9,10 +9,10 @@ export default function Footer() {
             <p className='copyright'>Copyright ©2024 by Cagnon Florian</p>
             <div className='images'>
                 <a href="https://translate.google.fr/?hl=fr&sl=fr&tl=en&text=Vous%20pensiez%20que%20%C3%A7a%20changerait%20la%20langue%20%3F!%20Dommage...&op=translate" target="_blank" rel="noreferrer noopener">
-                    <img src={AN} alt="drapeau anglais pour changer la langue en anglais" />
+                    <img src={AN} alt="Drapeau anglais pour changer la langue en anglais" />
                 </a>
                 <a href="https://translate.google.fr/?hl=fr&sl=fr&tl=ja&text=Vous%20pensiez%20que%20%C3%A7a%20changerait%20la%20langue%20%3F!%20Dommage...&op=translate" target="_blank" rel="noreferrer noopener">
-                    <img src={JP} alt="drapeau japonais pour changer la langue en japonais" />
+                    <img src={JP} alt="Drapeau japonais pour changer la langue en japonais" />
                 </a>
             </div>
         </div>

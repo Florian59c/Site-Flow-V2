@@ -10,7 +10,7 @@ export default function NotFound() {
             <h2>La page que vous cherchez n'existe pas !</h2>
             <Infinity />
             <Link to="/" className='button'>
-                <img src={Button} alt='bouton personnalisé' />
+                <img src={Button} alt="Bouton ramenant à la page d'accueil" />
                 <h3>Retourner à la page d'accueil</h3>
             </Link>
         </div>
