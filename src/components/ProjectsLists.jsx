@@ -2,7 +2,7 @@ import './css/ProjectsLists.scss';
 import ProjectsDetail from 'modal/ProjectsDetail';
 import { useState } from 'react';
 
-function ProjectsLists({ projects }) {
+export default function ProjectsLists({ projects }) {
     const [openModal, setOpenModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState({});
 
@@ -32,5 +32,3 @@ function ProjectsLists({ projects }) {
         </>
     );
 }
-
-export default ProjectsLists;

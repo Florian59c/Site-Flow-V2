@@ -3,7 +3,7 @@ import './App.scss';
 import Home from './screens/Home';
 import NotFound from './screens/NotFound';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Switch>
@@ -13,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

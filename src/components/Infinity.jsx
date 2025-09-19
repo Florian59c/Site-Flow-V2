@@ -1,6 +1,6 @@
 import './css/Infinity.scss';
 
-function Infinity() {
+export default function Infinity() {
     return (
         <div className="infinity-container">
             {/* SVG qui contient le symbole infini et le cercle */}
@@ -48,5 +48,3 @@ function Infinity() {
         </div>
     );
 }
-
-export default Infinity;

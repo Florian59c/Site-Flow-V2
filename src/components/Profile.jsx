@@ -5,7 +5,7 @@ import CV from 'modal/CV';
 import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-function Profile() {
+export default function Profile() {
     const [openModal, setOpenModal] = useState(false);
 
     return (
@@ -43,5 +43,3 @@ function Profile() {
         </div>
     );
 }
-
-export default Profile;

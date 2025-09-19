@@ -4,7 +4,7 @@ import './css/Header.scss';
 import Menu from './Menu';
 import { Link } from "react-scroll";
 
-function Header() {
+export default function Header() {
     const [appearMenu, setAppearMenu] = useState(false);
 
     return (
@@ -33,5 +33,3 @@ function Header() {
         </div>
     );
 }
-
-export default Header;

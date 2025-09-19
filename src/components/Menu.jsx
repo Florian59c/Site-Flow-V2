@@ -1,7 +1,7 @@
 import './css/Menu.scss';
 import { Link } from "react-scroll";
 
-function Menu({ className = "", onLinkClick = () => { } }) {
+export default function Menu({ className = "", onLinkClick = () => { } }) {
     return (
         <nav className={`Menu ${className}`.trim()}>
             <Link activeClass="active" to="profile" spy={true} smooth={true} offset={-60} duration={1000} onClick={onLinkClick}>
@@ -22,5 +22,3 @@ function Menu({ className = "", onLinkClick = () => { } }) {
         </nav>
     );
 }
-
-export default Menu;

@@ -4,7 +4,7 @@ import ProjectsList from 'data/ProjectsList';
 import Arrow from "assets/img/icon/right-arrow.png";
 import { useState } from 'react';
 
-function Projects() {
+export default function Projects() {
     const [display, setDisplay] = useState(false);
     return (
         <div className="Projects" id="projects" >
@@ -25,5 +25,3 @@ function Projects() {
         </div>
     );
 }
-
-export default Projects;

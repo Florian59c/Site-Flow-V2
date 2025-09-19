@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from "assets/img/Button.png";
 import Infinity from 'components/Infinity';
 
-function NotFound() {
+export default function NotFound() {
     return (
         <div className="NotFound">
             <h1>404</h1>
@@ -16,5 +16,3 @@ function NotFound() {
         </div>
     );
 }
-
-export default NotFound;

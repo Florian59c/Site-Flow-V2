@@ -2,7 +2,7 @@ import './css/Skills.scss';
 import SkillsList from 'data/SkillsList';
 import SkillSection from './SkillSection';
 
-function Skills() {
+export default function Skills() {
     const mainSkills = SkillsList.filter(skill => skill.isMainSkill);
     const otherSkills = SkillsList.filter(skill => !skill.isMainSkill);
 
@@ -20,5 +20,3 @@ function Skills() {
         </div>
     );
 }
-
-export default Skills;

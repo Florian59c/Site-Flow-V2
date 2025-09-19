@@ -3,7 +3,7 @@ import { useState } from 'react';
 import X from "assets/img/icon/X.png";
 import Button from "assets/img/Button.png";
 
-function ProjectsDetail({ selectedProject, setOpenModal }) {
+export default function ProjectsDetail({ selectedProject, setOpenModal }) {
     const [closing, setClosing] = useState(false);
 
     const handleClose = () => {
@@ -68,5 +68,3 @@ function ProjectsDetail({ selectedProject, setOpenModal }) {
         </div>
     );
 }
-
-export default ProjectsDetail;

@@ -5,7 +5,7 @@ import DownloadArrow from "assets/img/icon/Download-Arrow.png";
 import CV_Classique_preview from "assets/img/cv/CV_(Classique)-Cagnon_Florian.png";
 import CV_Original_preview from "assets/img/cv/CV_(Original)-Cagnon_Florian.png";
 
-function CV({ setOpenModal }) {
+export default function CV({ setOpenModal }) {
     const [closing, setClosing] = useState(false);
 
     const handleOverlayClick = () => {
@@ -45,5 +45,3 @@ function CV({ setOpenModal }) {
         </div>
     );
 }
-
-export default CV;

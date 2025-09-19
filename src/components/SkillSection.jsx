@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Tooltip } from "@mui/material";
 import Arrow from "assets/img/icon/right-arrow.png";
 
-function SkillSection({ title, skills, toggleable = false }) {
+export default function SkillSection({ title, skills, toggleable = false }) {
     const [open, setOpen] = useState(!toggleable);
 
     return (
@@ -43,5 +43,3 @@ function SkillSection({ title, skills, toggleable = false }) {
         </div>
     );
 }
-
-export default SkillSection;

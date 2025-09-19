@@ -2,7 +2,7 @@ import './css/Footer.scss';
 import AN from 'assets/img/icon/Drapeau-Anglais.png';
 import JP from 'assets/img/icon/Drapeau-Japonais.png';
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="Footer">
             <a href="https://github.com/Florian59c?tab=repositories" target="_blank" rel="noreferrer noopener"><p className='github'>GitHub</p></a>
@@ -18,5 +18,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;
