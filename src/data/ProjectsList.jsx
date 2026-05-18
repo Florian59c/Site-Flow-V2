@@ -13,7 +13,7 @@ import IMG_flowblog from "assets/img/screenshot/FlowBlog.png";
 import IMG_site_de_Flow_V2 from "assets/img/screenshot/Site de Flow V2.png";
 import IMG_idearium from "assets/img/screenshot/Idearium.png";
 import IMG_amazonlike from "assets/img/screenshot/AmazonLike.png";
-import IMG_interogation from "assets/img/screenshot/point d'interrogation.png";
+// import IMG_interogation from "assets/img/screenshot/point d'interrogation.png";
 // Les vidéos :
 import FlowBlog_User from 'assets/video/FlowBlog_User.mp4';
 import FlowBlog_Admin from 'assets/video/FlowBlog_Admin.mp4';
